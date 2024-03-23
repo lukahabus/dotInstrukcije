@@ -1,6 +1,6 @@
 ﻿namespace dotInstrukcije.API.Controllers
 {
-    public class InstructionSessionController
+    public class InstructionsDateController
     {
     }
 }
