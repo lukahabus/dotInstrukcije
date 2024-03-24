@@ -1,4 +1,6 @@
 using dotInstrukcije.API.Data;
+using dotInstrukcije.API.Services.Interfaces;
+using dotInstrukcije.API.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -9,6 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Add JWT Generator Service
+builder.Services.AddScoped<IJwtGenerator, JwtGenerator>();
 
 // Add JWT Authentication
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");

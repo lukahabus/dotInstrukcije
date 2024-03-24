@@ -1,4 +1,4 @@
-﻿namespace dotInstrukcije.API.Services
+﻿namespace dotInstrukcije.API.Services.Interfaces
 {
     public interface IStudentService
     {
