@@ -1,4 +1,6 @@
-﻿namespace dotInstrukcije.API.Dtos
+﻿using dotInstrukcije.API.Models;
+
+namespace dotInstrukcije.API.Dtos
 {
     public class RegisterDto
     {
@@ -7,5 +9,6 @@
         public string? Surname { get; set; }
         public string? Password { get; set; }
         public string? ProfilePictureUrl { get; set; }
+        public List<string>? Subjects { get; set; }
     }
 }

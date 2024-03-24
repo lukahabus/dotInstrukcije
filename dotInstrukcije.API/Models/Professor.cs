@@ -9,6 +9,6 @@
         public string? Password { get; set; }
         public string? ProfilePictureUrl { get; set; }
         public int InstructionsCount { get; set; }
-        public ICollection<Subject>? Subjects { get; set; }
+        public List<string>? Subjects { get; set; }
     }
 }
