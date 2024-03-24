@@ -8,7 +8,7 @@ This project is a web API for managing students, professors and subjects for tut
 
 • Professor: Represents a professor. Fields include Id, Email, Name, Surname, Password, ProfilePictureUrl, and Subjects.
 
-• Subject: Represents a subject taught in the institution. Fields include Id, Title, Url, and Description.
+• Subject: Represents a subject taught by a professor. Fields include Id, Title, Url, and Description.
 
 • InstructionSession: Represents a scheduled instruction session. Fields include Id, Date, and ProfessorId.
 
