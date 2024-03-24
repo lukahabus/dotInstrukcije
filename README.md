@@ -1,10 +1,12 @@
 # dotInstrukcije
 
-This project is a web API for managing professors and subjects in an educational institution. It provides features for registering and logging in professors, creating subjects, retrieving subjects by URL, and scheduling instruction sessions.
+This project is a web API for managing students, professors and subjects for tutoring. It provides features for registering and logging in professors / students, creating subjects, retrieving subjects by URL, and scheduling instruction sessions.
 
 ## Entities
 
-• Professor: Represents a professor in the institution. Fields include Id, Email, Name, Surname, Password, ProfilePictureUrl, and Subjects.
+• Student: Represents a student. Fields include Id, Email, Name, Surname, Password, ProfilePictureUrl.
+
+• Professor: Represents a professor. Fields include Id, Email, Name, Surname, Password, ProfilePictureUrl, and Subjects.
 
 • Subject: Represents a subject taught in the institution. Fields include Id, Title, Url, and Description.
 
@@ -22,9 +24,9 @@ This project is a web API for managing professors and subjects in an educational
 
 • JWT Authentication: Professors must authenticate with a JSON Web Token (JWT) to access certain routes.
 
-• Professor Registration: New professors can be registered.
+• Professor / Student Registration: New professors can be registered.
 
-• Professor Login: Registered professors can log in.
+• Professor / Student Login: Registered professors can log in.
 
 • Subject Creation: New subjects can be created with a unique title.
 
